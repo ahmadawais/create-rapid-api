@@ -17,6 +17,8 @@ const { clear, debug } = flags;
 
 const auth = require('./utils/auth');
 const questions = require('./utils/questions');
+const alert = require('cli-alerts');
+const { yellow: y } = require('chalk');
 
 (async () => {
 	init({ clear });
@@ -24,5 +26,10 @@ const questions = require('./utils/questions');
 
 	await auth();
 	const answers = await questions();
-	console.log('answers: ', answers);
+
+	alert({
+		type: `success`,
+		name: `API CREATED`,
+		msg: `${y(answers.title)} was created successfully!`
+	});
 })();
