@@ -15,9 +15,14 @@ const input = cli.input;
 const flags = cli.flags;
 const { clear, debug } = flags;
 
+const auth = require('./utils/auth');
+const questions = require('./utils/questions');
+
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
 
-	debug && log(flags);
+	await auth();
+	const answers = await questions();
+	console.log('answers: ', answers);
 })();
