@@ -32,12 +32,28 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [0.0.3](https://github.com/ahmadawais/create-rapid-api/compare/0.0.2...0.0.3)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Log message [`979dc2a`](https://github.com/ahmadawais/create-rapid-api/commit/979dc2ad1c9669cea9976ec8c6ee28a29f1eaa34) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: 0.0.2
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 First commit [`19903ce`](https://github.com/ahmadawais/create-rapid-api/commit/19903ce6700dc15d26f291e3cd514b66a2bbf706) <br>
 > 📦 Basic auth and questions [`3a1c7ef`](https://github.com/ahmadawais/create-rapid-api/commit/3a1c7ef697491fc3ee1782cfb7fdb20cf682c7f1) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`07e14cf`](https://github.com/ahmadawais/create-rapid-api/commit/07e14cf1c156f5ce84dc8c84eca642203fe21efc) <br>
 
 <br>
 
