@@ -19,6 +19,7 @@ const auth = require('./utils/auth');
 const questions = require('./utils/questions');
 const alert = require('cli-alerts');
 const { yellow: y } = require('chalk');
+const open = require('open');
 
 (async () => {
 	init({ clear });
@@ -32,4 +33,8 @@ const { yellow: y } = require('chalk');
 		name: `API CREATED`,
 		msg: `${y(answers.title)} was created successfully!`
 	});
+
+	await open(
+		`https://rapidapi.com/kevin-org-kevin-org-default/api/papajoke/`
+	);
 })();
