@@ -1,6 +1,6 @@
 <h4 align="center">
     <a href="https://rapidapi.com/learn?utm_source=FOSS&utm_medium=FOSS&utm_campaign=create-rapid-api">
-        <img src="https://raw.githubusercontent.com/ahmadawais/create-rapid-api/master/.github/logo.jpg" alt="create-rapid-api" />
+        <img src="https://raw.githubusercontent.com/ahmadawais/create-rapid-api/main/.github/logo.jpg" alt="create-rapid-api" />
     </a>
     <br>
     <br>
