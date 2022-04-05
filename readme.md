@@ -7,8 +7,8 @@
 
 📟 CLI to create APIs with RapidAPI. [Learn to build Node.js CLI apps][n].
 
-<!-- [![DOWNLOADS](https://img.shields.io/npm/dt/create-rapid-api?label=DOWNLOADS%20%20%E2%9D%AF&colorA=538d4e&colorB=538d4e&style=flat)](https://www.npmjs.com/package/create-rapid-api)  -->
-[![Learn Node.js CLI Automation](https://img.shields.io/badge/-NodeCLI.com%20%E2%86%92-gray.svg?colorB=538d4e&style=flat)](https://nodecli.com/?utm_source=GitHubFOSS) [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=538d4e&colorB=538d4e&style=flat)](https://twitter.com/mrahmadawais/)
+<!-- [![DOWNLOADS](https://img.shields.io/npm/dt/create-rapid-api?label=DOWNLOADS%20%20%E2%9D%AF&colorA=4A64E2&colorB=4A64E2&style=flat)](https://www.npmjs.com/package/create-rapid-api)  -->
+[![Learn Node.js CLI Automation](https://img.shields.io/badge/-NodeCLI.com%20%E2%86%92-gray.svg?colorB=4A64E2&style=flat)](https://nodecli.com/?utm_source=GitHubFOSS) [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=4A64E2&colorB=4A64E2&style=flat)](https://twitter.com/mrahmadawais/)
 
 </h4>
 
