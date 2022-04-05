@@ -16,7 +16,7 @@
 
 # create-rapid-api
 
-- 📦 CLI to create an API on RapidAPI
+- 📦 CLI to create an API on [RapidAPI]
 - 🤯 Automatically stores info you last entered to save time
 - 👨‍🏫 Learn to automate anything: [NodeCLI.com][n] automation with JavaScript
 
@@ -132,3 +132,4 @@ Or you can back me by checking out my super fun video course. After building hun
 [n]: https://nodecli.com/?utm_source=FOSS&utm_medium=FOSS&utm_campaign=create-rapid-api
 [repo]: https://github.com/AhmadAwais/create-rapid-api
 [d]: https://raw.githubusercontent.com/ahmadawais/create-rapid-api/main/create-rapid-api-ahmadawais.zip
+[r]: https://RapidAPI.com/?utm_source=ahmadawais/create-rapid-api&utm_medium=DevRel&utm_campaign=DevRel
