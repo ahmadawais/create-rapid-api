@@ -8,10 +8,11 @@ const flags = {
 		alias: `c`,
 		desc: `Clear the console`
 	},
-	noClear: {
+	key: {
 		type: `boolean`,
 		default: false,
-		desc: `Don't clear the console`
+		alias: `k`,
+		desc: `Set or reset your RapidAPI Key`
 	},
 	debug: {
 		type: `boolean`,

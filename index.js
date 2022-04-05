@@ -13,28 +13,57 @@ const log = require('./utils/log');
 
 const input = cli.input;
 const flags = cli.flags;
-const { clear, debug } = flags;
+const { clear, key } = flags;
 
+const alert = require('cli-alerts');
 const auth = require('./utils/auth');
 const questions = require('./utils/questions');
-const alert = require('cli-alerts');
-const { yellow: y } = require('chalk');
-const open = require('open');
+const { gql, client } = require('./utils/client');
+
+const ora = require('ora');
+const spinner = ora({ text: '' });
+const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
 
-	await auth();
+	await auth(key);
 	const answers = await questions();
+
+	// Create an API.
+	const query = gql`
+		mutation createApi($apiCreateInput: ApiCreateInput!) {
+			createApi(api: $apiCreateInput) {
+				id
+				slugifiedName
+			}
+		}
+	`;
+
+	const variables = {
+		apiCreateInput: {
+			name: answers.name,
+			title: answers.title,
+			category: answers.category,
+			description: answers.description,
+			version: {
+				name: answers.version
+			}
+		}
+	};
+
+	spinner.start(`${y(`API`)} creaing…`);
+
+	const {
+		createApi: { slugifiedName }
+	} = await client(query, variables);
+	// console.log('data: ', data);
+	spinner.succeed(`${g(`API`)} created`);
 
 	alert({
 		type: `success`,
 		name: `API CREATED`,
-		msg: `${y(answers.title)} was created successfully!`
+		msg: `${answers.title} has been created.\n https://rapidapi.com/provider/apis/${slugifiedName}/definition/`
 	});
-
-	await open(
-		`https://rapidapi.com/kevin-org-kevin-org-default/api/papajoke/`
-	);
 })();

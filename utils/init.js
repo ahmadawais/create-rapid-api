@@ -6,7 +6,7 @@ module.exports = ({ clear = true }) => {
 	unhandled();
 	welcome({
 		title: `create-rapid-api`,
-		tagLine: `by Ahmad Awais`,
+		tagLine: `by Awais.dev`,
 		description: pkg.description,
 		version: pkg.version,
 		bgColor: '#36BB09',
