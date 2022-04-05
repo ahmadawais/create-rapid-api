@@ -32,11 +32,27 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [0.2.0](https://github.com/ahmadawais/create-rapid-api/compare/0.1.0...0.2.0)
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Basic usage [`30ba835`](https://github.com/ahmadawais/create-rapid-api/commit/30ba83507c341aad20a633b8c6cd78e461ff5ca6) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.1.0](https://github.com/ahmadawais/create-rapid-api/compare/0.0.4...0.1.0)
 
 ![📦 NEW:](https://img.shields.io/badge/-NEW-gray.svg?colorB=3778FF)
 
 > 📦 First version [`4615af0`](https://github.com/ahmadawais/create-rapid-api/commit/4615af04de5a76c64214229f41e72d59519bcde1) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`c500fa5`](https://github.com/ahmadawais/create-rapid-api/commit/c500fa5e3ff267ceb66a7c6e1764295e52ae9c9d) <br>
 
 <br>
 
