@@ -5,7 +5,7 @@
     <br>
     <br>
 
-📟 CLI to create APIs with RapidAPI. [Learn to build Node.js CLI apps][n].
+📟 CLI to create APIs with [RapidAPI][r]. [Learn to build Node.js CLI apps][n].
 
 <!-- [![DOWNLOADS](https://img.shields.io/npm/dt/create-rapid-api?label=DOWNLOADS%20%20%E2%9D%AF&colorA=4A64E2&colorB=4A64E2&style=flat)](https://www.npmjs.com/package/create-rapid-api)  -->
 [![Learn Node.js CLI Automation](https://img.shields.io/badge/-NodeCLI.com%20%E2%86%92-gray.svg?colorB=4A64E2&style=flat)](https://nodecli.com/?utm_source=GitHubFOSS) [![Follow @MrAhmadAwais on Twitter](https://img.shields.io/badge/FOLLOW%20@MRAHMADAWAIS%20%E2%86%92-gray.svg?colorA=4A64E2&colorB=4A64E2&style=flat)](https://twitter.com/mrahmadawais/)
@@ -16,7 +16,7 @@
 
 # create-rapid-api
 
-- 📦 CLI to create an API on [RapidAPI]
+- 📦 CLI to create an API on [RapidAPI][r]
 - 🤯 Automatically stores info you last entered to save time
 - 👨‍🏫 Learn to automate anything: [NodeCLI.com][n] automation with JavaScript
 
@@ -131,5 +131,4 @@ Or you can back me by checking out my super fun video course. After building hun
 [c]: https://nodecli.com/?utm_source=FOSS&utm_medium=FOSS&utm_campaign=create-rapid-api
 [n]: https://nodecli.com/?utm_source=FOSS&utm_medium=FOSS&utm_campaign=create-rapid-api
 [repo]: https://github.com/AhmadAwais/create-rapid-api
-[d]: https://raw.githubusercontent.com/ahmadawais/create-rapid-api/main/create-rapid-api-ahmadawais.zip
 [r]: https://RapidAPI.com/?utm_source=ahmadawais/create-rapid-api&utm_medium=DevRel&utm_campaign=DevRel
