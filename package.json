@@ -1,7 +1,7 @@
 {
 	"name": "create-rapid-api",
 	"description": "Rapidly create APIs to sell",
-	"version": "0.3.2",
+	"version": "0.3.3",
 	"license": "UNLICENSED",
 	"bin": {
 		"create-rapid-api": "index.js",

@@ -32,12 +32,32 @@ I have released a video course to help you build <a href="https://NodeCLI.com/?u
 
 <br>
 
+### RELEASE: [0.3.3](https://github.com/ahmadawais/create-rapid-api/compare/0.3.2...0.3.3)
+
+![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
+
+> 👌 Category selector [`21af5a9`](https://github.com/ahmadawais/create-rapid-api/commit/21af5a926b5fd1a2e702d13cf76b9187f8d1b19b) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Downloads badge [`ad01e30`](https://github.com/ahmadawais/create-rapid-api/commit/ad01e30e455b8a48309d9da7914b9c91852f0593) <br>
+
+<br>
+
+[![hr](https://raw.githubusercontent.com/ahmadawais/stuff/master/images/git/hr.png)](/)
+
+<br>
+
 ### RELEASE: [0.3.2](https://github.com/ahmadawais/create-rapid-api/compare/0.3.1...0.3.2)
 
 ![👌 IMPROVE:](https://img.shields.io/badge/-IMPROVEMENT-gray.svg?colorB=39AA54)
 
 > 👌 links [`2d2e8c2`](https://github.com/ahmadawais/create-rapid-api/commit/2d2e8c2bc5ebe255071d3a7b5fe9d87bf48adaf1) <br>
 > 👌 link [`a5ba039`](https://github.com/ahmadawais/create-rapid-api/commit/a5ba03948a6ab433ceb8493a6d388b83ca3bed4a) <br>
+
+![📖 DOC:](https://img.shields.io/badge/-DOCS-gray.svg?colorB=978CD4)
+
+> 📖 Changelog [`fdaf910`](https://github.com/ahmadawais/create-rapid-api/commit/fdaf9102bb2fe9a299aec40f0b7ab68f823a0603) <br>
 
 <br>
 
