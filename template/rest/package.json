@@ -1,0 +1,15 @@
+{
+	"name": "{{name}}",
+	"description": "{{description}}",
+	"version": "{{version}}",
+	"main": "index.js",
+	"scripts": {
+		"server": "nodemon index.js"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	},
+	"dependencies": {
+		"express": "^4.17.3"
+	}
+}
