@@ -2,16 +2,48 @@ const { Select } = require('enquirer');
 const ask = require('./ask');
 const select = require('./select');
 
-module.exports = async () => {
+module.exports = async (template = false) => {
 	const name = await ask({
 		name: `name`,
 		message: `API name?`,
 		hint: `(kebab-case only)`
 	});
+
 	const title = await ask({
 		name: `title`,
 		message: `API Title?`
 	});
+
+	const description = await ask({
+		name: `description`,
+		message: `API description?`
+	});
+	const version = await ask({
+		name: `version`,
+		message: `API version?`,
+		initial: `1.0`
+	});
+
+	if (template) {
+		const type = await select({
+			name: `type`,
+			message: `Type`,
+			hint: `e.g. rest`,
+			initial: `rest`,
+			choices: [`rest`, `graphql`]
+		});
+
+		const vars = {
+			name,
+			description,
+			version,
+			title,
+			type
+		};
+
+		return vars;
+	}
+
 	// const category = await ask({
 	// 	name: `category`,
 	// 	message: `API Category?`,
@@ -72,16 +104,6 @@ module.exports = async () => {
 			'Reward',
 			'Search'
 		]
-	});
-
-	const description = await ask({
-		name: `description`,
-		message: `CLI description?`
-	});
-	const version = await ask({
-		name: `version`,
-		message: `API version?`,
-		initial: `1.0`
 	});
 
 	const vars = {

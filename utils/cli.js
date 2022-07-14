@@ -28,7 +28,8 @@ const flags = {
 };
 
 const commands = {
-	help: { desc: `Print help info` }
+	help: { desc: `Print help info` },
+	template: { desc: `Use a template` }
 };
 
 const helpText = meowHelp({

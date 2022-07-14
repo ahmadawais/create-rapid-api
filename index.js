@@ -16,6 +16,7 @@ const flags = cli.flags;
 const { clear, key } = flags;
 
 const alert = require('cli-alerts');
+const generate = require('./utils/generate');
 const auth = require('./utils/auth');
 const questions = require('./utils/questions');
 const { gql, client } = require('./utils/client');
@@ -27,6 +28,12 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 (async () => {
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
+
+	if (input.includes(`template`)) {
+		const vars = await questions(true);
+		generate(__dirname, vars);
+		return;
+	}
 
 	await auth(key);
 	const answers = await questions();
@@ -53,7 +60,7 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 		}
 	};
 
-	spinner.start(`${y(`API`)} creaing…`);
+	spinner.start(`${y(`API`)} creating…`);
 
 	const {
 		createApi: { slugifiedName }
