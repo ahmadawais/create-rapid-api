@@ -30,7 +30,7 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 	input.includes(`help`) && cli.showHelp(0);
 
 	if (input.includes(`template`)) {
-		const vars = await questions(true);
+		const vars = await questions({ template: true, key });
 		generate(__dirname, vars);
 		return;
 	}
