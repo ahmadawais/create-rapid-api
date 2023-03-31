@@ -9,8 +9,8 @@ module.exports = async ({ template, key }) => {
 			name: `type`,
 			message: `Type`,
 			hint: `e.g. rest`,
-			initial: `rest`,
-			choices: [`REST`, `GraphQl`, `Rapid API + Next.js + OpenAI`]
+			initial: `REST`,
+			choices: [`REST`, `GraphQL`, `Rapid API + Next.js + OpenAI`]
 		});
 
 		if (type === `Rapid API + Next.js + OpenAI`) {
@@ -18,7 +18,7 @@ module.exports = async ({ template, key }) => {
 			const name = await ask({
 				name: `name`,
 				message: `Project name?`,
-				hint: `(kebab-case only)`
+				hint: `(lower-case only, e.g., image-generator)`
 			});
 
 			const vars = {

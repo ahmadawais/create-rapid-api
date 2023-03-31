@@ -15,7 +15,7 @@ module.exports = (dirName, vars) => {
 	const outDirPath = path.join(process.cwd(), outDir);
 
 	if (type === `REST`) {
-		const inDir = path.join(dirName, `templates/${type.toLowerCase()}`);
+		const inDir = path.join(dirName, `templates/rest`);
 		copy(inDir, outDirPath, vars, async (err, files) => {
 			if (err) handleErr(err);
 
@@ -57,7 +57,7 @@ module.exports = (dirName, vars) => {
 	}
 
 	if (type === `GraphQL`) {
-		const inDir = path.join(dirName, `templates/${type.toLowerCase()}`);
+		const inDir = path.join(dirName, `templates/graphql`);
 		copy(inDir, outDirPath, vars, async (err, files) => {
 			if (err) handleErr(err);
 
