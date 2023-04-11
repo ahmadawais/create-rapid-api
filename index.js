@@ -44,7 +44,7 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 	}
 
 	await auth(key);
-	const answers = await questions();
+	const answers = await questions({});
 
 	// Create an API.
 	const query = gql`
