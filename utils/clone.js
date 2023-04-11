@@ -22,7 +22,7 @@ module.exports = async (__dirname, example) => {
 			`npx degit RapidAPI/DevRel-Examples-External/${example} ${examplePath}`
 		);
 
-		spinner.succeed(`${g(`EXAMPLE`)} created!`);
+		spinner.succeed(`${g(`${example}`)} example created!`);
 
 		spinner.start(
 			`${y(`DEPENDENCIES`)} installing...\n\n${d(
@@ -35,8 +35,8 @@ module.exports = async (__dirname, example) => {
 
 		alert({
 			type: 'success',
-			name: `${example}`,
-			msg: `created.`
+			name: `Rapid API Example`,
+			msg: `created successfully.`
 		});
 
 		console.log(`${d(`I suggest that you begin by typing:`)}`);
