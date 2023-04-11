@@ -51,7 +51,7 @@ module.exports = async (__dirname, example) => {
 
 			if (requestPath.length === 1) {
 				// if there is no nested directories
-				const dirPath = path.join(example, requestPath[0]);
+				const dirPath = path.join(examplePath, requestPath[0]);
 
 				let data = res.data;
 				if (dirPath.includes('.json')) {
@@ -62,7 +62,7 @@ module.exports = async (__dirname, example) => {
 				});
 			} else if (requestPath.length === 2) {
 				// if there is only one subdirectory
-				const dirPath = path.join(example, requestPath[0]);
+				const dirPath = path.join(examplePath, requestPath[0]);
 
 				// check if the directory already exists
 				if (!fs.existsSync(dirPath)) {
@@ -79,7 +79,7 @@ module.exports = async (__dirname, example) => {
 			} else {
 				// if there are 2 level of nesting
 				const dirPath = path.join(
-					example,
+					examplePath,
 					requestPath[0],
 					requestPath[1]
 				);
