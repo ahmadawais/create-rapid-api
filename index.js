@@ -16,8 +16,11 @@ const flags = cli.flags;
 const { clear, key } = flags;
 
 const alert = require('cli-alerts');
+const generate = require('./utils/generate');
 const auth = require('./utils/auth');
 const questions = require('./utils/questions');
+const search = require('./utils/search');
+const clone = require('./utils/clone');
 const { gql, client } = require('./utils/client');
 
 const ora = require('ora');
@@ -28,8 +31,20 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 	init({ clear });
 	input.includes(`help`) && cli.showHelp(0);
 
+	if (input.includes(`template`)) {
+		const vars = await questions({ template: true, key });
+		generate(__dirname, vars);
+		return;
+	}
+
+	if (input.includes(`example`)) {
+		const example = await search();
+		clone(__dirname, example);
+		return;
+	}
+
 	await auth(key);
-	const answers = await questions();
+	const answers = await questions({});
 
 	// Create an API.
 	const query = gql`
@@ -53,7 +68,7 @@ const { green: g, red: r, yellow: y, dim: d } = require('chalk');
 		}
 	};
 
-	spinner.start(`${y(`API`)} creaing…`);
+	spinner.start(`${y(`API`)} creating…`);
 
 	const {
 		createApi: { slugifiedName }

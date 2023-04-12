@@ -33,11 +33,19 @@ module.exports = async ({ name, message, hint, initial }) => {
 			validate(value, state) {
 				if (state && state.name === `command`) return true;
 				if (state && state.name === `name`) {
+					const regex = /[A-Z\s]/;
+					if (regex.test(value))
+						return 'Project name cannot have spaces or capital letters.';
 					if (fs.existsSync(value)) {
 						return `Directory already exists: ./${value}`;
 					} else {
 						return true;
 					}
+				}
+				if (state && state.name === `key`) {
+					const regex = /\s/;
+					if (regex.test(value)) return `API key cannot have spaces.`;
+					return true;
 				}
 				return !value ? `Please add a value.` : true;
 			}
