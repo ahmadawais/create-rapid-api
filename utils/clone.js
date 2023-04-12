@@ -7,6 +7,8 @@ const ora = require('ora');
 
 const spinner = ora({ text: '' });
 
+const REPO = `RapidAPI/DevRel-Examples-External`;
+
 module.exports = async (__dirname, example) => {
 	const examplePath = path.join(__dirname, example);
 
@@ -18,9 +20,7 @@ module.exports = async (__dirname, example) => {
 			)}`
 		);
 
-		await command(
-			`npx degit RapidAPI/DevRel-Examples-External/${example} ${examplePath}`
-		);
+		await command(`npx degit ${REPO}/${example} ${examplePath}`);
 
 		spinner.succeed(`${g(`${example}`)} example created!`);
 
